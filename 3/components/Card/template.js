@@ -10,7 +10,7 @@ export default {
         <div class="alien-card">
             <div class="alien-card__logo"><i class="fa-solid fa-heart"></i></div>
             <div class="alien-card__number">
-                ${data.number.map(n => `<span>${n}</span>`).join("")}
+            ${data.number.map(n => `<span>${n}</span>`).join("")}
             </div>
             <div class="alien-card__user">${data.user}</div>
             <div class="alien-card__expire">${data.expire}</div>

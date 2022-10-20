@@ -18,9 +18,34 @@
         alien-cc {
             box-shadow: 0 0 5px 0 palevioletred;
         }
+
+        alien-bc {
+            background-color: #deaab4;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
     </style>
 </head>
 <body>
+    <form>
+        <input type="text" name="user">
+        <input type="text" name="prof">
+        <input type="text" name="mail">
+        <input type="text" name="tel">
+        <select name="logo">
+            <option value="yandex">Яндекс</option>
+            <option value="github">ГитХаб</option>
+            <option value="discord">Дискорд</option>
+            <option value="microsoft">Майкрософт</option>
+            <option value="wikipedia-w">Википедия</option>
+            <option value="react">Реакт</option>
+        </select>
+    </form>
+   <alien-bc user="Vasya" prof="Developer" tel="+7(123)456-78-90" mail="vasya@mail.ru" logo="yandex"></alien-bc>
    <alien-cc type="MasterCard" number="0000111122223333" user="Lala Lee" expire="05/29"></alien-cc>
    <script src="./script.js" type="module"></script>
 </body>
